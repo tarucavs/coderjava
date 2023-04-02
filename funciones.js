@@ -1,3 +1,46 @@
+const mouse={
+    marca: "Genius",
+    modelo: "l209",
+    color:"negro",
+    precio:1000,
+    disponibilidad: true
+}
+
+const mouse2={
+    marca: "logitech",
+    modelo: "l301",
+    color:"blanco",
+    precio:1200,
+    disponibilidad: true
+}
+const mouse3={
+    marca: "verbatim",
+    modelo: "l399",
+    color:"azul",
+    precio:1300,
+    disponibilidad: true
+}
+
+const teclado={
+    marca: "verbatim",
+    modelo: "m44",
+    color:"negro",
+    precio:1700,
+    disponibilidad: true
+}
+
+const teclado2={
+    marca: "redragon",
+    modelo: "md3",
+    color:"negro",
+    precio:3000,
+    disponibilidad: true
+}
+
+console.log(mouse);
+
+
+
 alert('Bienvenido a Store Fontana')
 saludar()
 function saludar (){
@@ -5,6 +48,10 @@ function saludar (){
     console.log ('Un gusto saludarte ' + nombre);
     alert ('bienvenido a StoreFontana ' + nombre);
     alert ('Somos un store de computación con mas de 20 años de trayectoria')
+}
+
+for(let i=1;i<1;i++){
+    saludar();
 }
 
 let carrito=0;
@@ -48,6 +95,27 @@ else {
 mensaje = prompt('Desea comprar otro producto de la StoreFontana? (s-si / n-no)');
 
 
-
 }
 
+let frase = "storefontana"
+console.log ("esta frase tiene " + frase.length + " caracteres") 
+
+//listas
+
+const listaitems = ["mouse 1", "mouse2", "mouse3", "teclado1", "teclado2"];
+
+//console
+
+for (let i=0; i<listaitems.length ; i++)
+console.log ((i+1) +" - "+ listaitems [i]);
+
+let itemsbuscado = prompt (" ingresa el item y vere si esta en mi lista");
+let posicion = listaitems.indexOf (itemsbuscado);
+
+if (posicion != -1){
+    console.log ("el items ya se encuentra en la lista");
+    
+}
+else{
+    console.log ("el items aun no se encuentra en la lista");
+    }
